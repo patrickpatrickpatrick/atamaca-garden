@@ -1,0 +1,490 @@
+{
+	"curators": [
+		{
+			"name": "Diego Lara Koenig",
+			"invitado": "Invitado por MUSTAKIS - Leonor Merín",
+			"bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+		},
+		{
+			"name": "Sergio Martín",
+			"invitado": "Invitado por ALMA - Valeria Foncea",
+			"explanation": "La astrobiología es una ciencia multidisciplinaria desde su origen hace poco más de 20 años. Las referencias tratan de ser lo mas genéricas posibles dentro del contexto de la astrobiología, con un cierto sesgo hacia al estudio de la complejidad química en el universo que es el campo en el que ALMA tiene un impacto dentro de las astrobiología.",
+			"bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+		}
+	],
+	"references": [
+		{
+			"title": "The Weather Project",
+			"curator": "Diego Lara Koenig",
+			"author": "Olafur Elliason",
+			"years": [2003],
+			"url": "https://olafureliasson.net/archive/artwork/WEK101003/the-weather-project",
+			"tag": "arte"
+		},
+		{
+			"title": "Irradiación de energía",
+			"curator": "Diego Lara Koenig",
+			"author": "Milton Becerra",
+			"years": [2016],
+			"url": "https://www.metalocus.es/es/noticias/irradiacion-de-energia-por-milton-becerra",
+			"tag": "arte"
+		},
+		{
+			"title": "Geoglifo Raul Zurita (“ni pena ni miedo”)",
+			"curator": "Diego Lara Koenig",
+			"author": "Desierto de Atacama",
+			"years": [1993],
+			"url": "http://www.cervantesvirtual.com/obra-visor/disolviendo-las-fronteras-land-art-y-poesia en-la-obra-de-raul-zurita/html/004b1660-1c37-4691-9f7a-ec444446811d_2.html",
+			"tag": "arte"
+		},
+		{
+			"title": "Amansara",
+			"curator": "Diego Lara Koenig",
+			"author": "Chancha Via Circuito",
+			"embed": {
+				"type": "spotify",
+				"url": "https://open.spotify.com/album/0ZE0VfhWqHYwM4UQCbJ1ik"
+			},
+			"years": [2014],
+			"url": "https://open.spotify.com/album/0ZE0VfhWqHYwM4UQCbJ1ik",
+			"tag": "arte"
+		},
+		{
+			"title": "Islas Rodeadas",
+			"curator": "Diego Lara Koenig",
+			"author": "Christo",
+			"years": [1980, 1981, 1982, 1983, 1984, 1985],
+			"url": "https://elemmental.com/2020/06/01/las-principales-intervenciones-de-christo-y-jeanne claude/",
+			"tag": "arte"
+		},
+		{
+			"title": "AudioMapa",
+			"curator": "Diego Lara Koenig",
+			"author": "Fernando Godoy",
+			"years": [2012],
+			"url": "https://www.audiomapa.org",
+			"tag": "arte"
+		},
+		{
+			"title": "La Ajenidad",
+			"curator": "Diego Lara Koenig",
+			"author": "Roberto Matta",
+			"years": [1970],
+			"url": "http://www.portaldearte.cl/obras/obras.htm?c=phrm003&amp;t=e&amp;o=La%20ajenidad&amp;a=Roberto%20Matta",
+			"tag": "arte"
+		},
+		{
+			"title": "Una Milla",
+			"curator": "Diego Lara Koenig",
+			"author": "Lotty Rosenfeld",
+			"years": [1979],
+			"url": "https://coleccion.malba.org.ar/una-milla-de-cruces-sobre-el-pavimento/",
+			"tag": "arte"
+		},
+		{
+			"title": "Quipu de Lava",
+			"curator": "Diego Lara Koenig",
+			"author": "Cecilia Vicuña",
+			"years": [2021],
+			"url": "https://vimeo.com/user/3848941",
+			"tag": "arte"
+		},
+		{
+			"title": "Quebrantos",
+			"curator": "Diego Lara Koenig",
+			"author": "Doris Salcedo",
+			"years": [2019, 2020],
+			"embed": {
+				"type": "youtube",
+				"url": "https://www.youtube.com/watch?v=yX-BH41rMhY"
+			},
+			"url": "https://agenciadenoticias.unal.edu.co/detalle/article/quebrantos-revive-a-los-lideres-sociales-en-la-plaza-de-bolivar.html",
+			"tag": "arte"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"tag": "arquitectura",
+			"title": "The EDEN Project",
+			"author": "Inglaterra",
+			"url": "https://www.edenproject.com",
+			"years": [2001]
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"tag": "arquitectura",
+			"title": "Freshkills Park",
+			"author": "",
+			"url": "https://freshkillspark.org",
+			"years": [2012],
+			"ongoing": true
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"tag": "arquitectura",
+			"title": "Highline Park",
+			"author": "",
+			"url": "https://www.thehighline.org",
+			"years": []
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"tag": "arquitectura",
+			"title": " La montaña sagrada",
+			"author": "Chillida",
+			"url": "http://arquetipos.arquia.es/articulo/eduardo-chillida-tindaya/",
+			"years": []
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"tag": "arquitectura",
+			"title": "La sucursal del Cielo en Sudamerica",
+			"author": "Solano Benitez",
+			"years": [2000],
+			"url": "https://www.plataformaarquitectura.cl/cl/624078/la-sucursal-del-cielo-en-sudamerica-solano-benitez"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"title": "Marble Arch Hill",
+			"tag": "arquitectura",
+			"author": "MVRDV",
+			"years": [2021],
+			"url": "https://www.plataformaarquitectura.cl/cl/957757/mvrdv-disena-una-instalacion-topografica-temporal-en-el-centro-de-londres"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"title": "Toyota Woven City",
+			"tag": "arquitectura",
+			"author": "BIG",
+			"years": [2021],
+			"url": "https://www.toyota.es/world-of-toyota/articles-news-events/Ciudad-del-futuro-Woven-City-Toyota"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"title": "Termas geométricas",
+			"tag": "arquitectura",
+			"author": "German del Sol",
+			"years": [2009],
+			"url": "https://www.termasgeometricas.cl"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"title": "Casa en la Cascada",
+			"tag": "arquitectura",
+			"author": "Frank Lloyd Wright",
+			"years": [1939],
+			"url": "https://mymodernmet.com/es/frank-lloyd-wright-casa-de-la-cascada/"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"title": "Qianhai new city center landmark",
+			"tag": "arquitectura",
+			"author": "Sou Fujimoto",
+			"years": [2020],
+			"url": "https://afasiaarchzine.com/2021/06/sou-fujimoto-qianhai-new-city-center-landmark-shenzhen/"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"title": "Walking city",
+			"tag": "arquitectura",
+			"author": "Ron Herron, Archigram",
+			"years": [1965],
+			"url": "https://elblodgeilabasmati.com/2020/12/01/walking-city-ron-herron-1964/"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"title": "Fundación altiplano",
+			"tag": "fundaciones / organizaciones",
+			"author": "(preservación patrimonio)",
+			"years": [],
+			"url": "https://www.fundacionaltiplano.cl"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"title": "Centro desierto de Atacama",
+			"tag": "fundaciones / organizaciones",
+			"author": "(investigación científica)",
+			"years": [],
+			"url": "https://www.cda.uc.cl"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"title": "Contaminantes Anonimus",
+			"tag": "fundaciones / organizaciones",
+			"author": "(activismo medioambiental)",
+			"years": [],
+			"url": "https://www.instagram.com/contaminantes.anonimus/?hl=es-la"
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"tag": "fundaciones / organizaciones",
+			"title": "Fundación desierto de Atacama",
+			"author": "(investigación y preservación arqueológica)",
+			"url": "https://www.fundaciondesiertoatacama.cl",
+			"years": []
+		},
+		{
+			"curator": "Diego Lara Koenig",
+			"tag": "fundaciones / organizaciones",
+			"title": "Ladera Sur",
+			"author": "(medio de difusión temáticas variadas relacionadas a medioambiente)",
+			"url": "https://laderasur.com/sobre-ls/",
+			"years": []
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "Life in the Clouds of Venus?",
+			"info": "Paper proponiendo la posibilidad de la existencia de vida en las nubes de Venus.",
+			"author": "Morowitz & Sagan",
+			"years": [1967],
+			"url": "https://www.nature.com/articles/2151259a0"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "Discovery in space of ethanolamine, the simplest phospholipid head group",
+			"info": "Paper reciente con la detección de un fosfolípido presente en membranas Celulares.",
+			"author": "Rivilla et al.",
+			"years": [2021],
+			"url": "https://www.pnas.org/content/118/22/e2101314118"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "Tardigrade Survival Limits in High-Speed Impacts—Implications for Panspermia and Collection of Samples from Plumes Emitted by Ice Worlds",
+			"info": "Implicaciones a la teoria de la panspernia con resultados sobre la supervivencia de tardigrados a impactos de alta velocidad.",
+			"author": "Traspas & Burchell",
+			"years": [],
+			"url": "https://www.liebertpub.com/doi/10.1089/ast.2020.2405"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "Artículo divulgativo en Science explicando la relevancia de este estudio: Hardy water bears survive bullet impacts—up to a point",
+			"author": "O’Callaghan",
+			"years": [2018],
+			"url": "https://www.sciencemag.org/news/2021/05/hardy-water-bears-survive-bullet-impacts-point"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "The Discovery of Stromatolites Developing at 3570 m above Sea Level in a High Altitude Volcanic Lake Socompa, Argentinean Andes",
+			"info": "Estudio de adaptación microbial en región andina como aproximación a las fases tempranas de evolución de vida en la tierra.",
+			"author": "Farias et al.",
+			"years": [2013],
+			"url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053497"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "Exoplanet Biosignatures: A Review of Remotely Detectable Signs of Life",
+			"info": "Compilación de literatura sobre biomarcadores en exoplanetas.",
+			"author": "Schwieterman et al.",
+			"years": [2018],
+			"url": "https://arxiv.org/abs/1705.05791"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "Organic Molecules in the Interstellar Medium, Comets, and Meteorites: A Voyage from Dark Clouds to the Early Earth",
+			"info": "Resumen sobre la evolución molecular desde el medio interestelar, hasta la tierra primigenia.",
+			"author": "Ehrenfreund & Charnley",
+			"years": [],
+			"url": "https://www.annualreviews.org/doi/full/10.1146/annurev.astro.38.1.427"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "Evidence for a subsurface ocean on Europa",
+			"author": "Carr et al.",
+			"years": [1998],
+			"url": "https://ui.adsabs.harvard.edu/abs/1998Natur.391..363C/abstract"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "Life in extreme environments",
+			"author": "Rothschild & Mancinelli",
+			"years": [],
+			"url": "https://ui.adsabs.harvard.edu/link_gateway/2001Natur.409.1092R/PUB_HT"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "Prebiotic chemicals—amino acid and phosphorus—in the coma of comet 67P/Churyumov-Gerasimenko",
+			"info": "Deteccion de aminoácidos sencillos y fósforo en el cometa 67P/Churyumov-Gerasimenko  por la sonda ROSINA, que refuerza la importancia de los cometas en la emergencia de vida en la tierra.",
+			"author": "Altwegg et al.",
+			"years": [2016],
+			"url": "https://advances.sciencemag.org/content/2/5/e1600285"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Papers / Artículos Científicos",
+			"title": "ALMA detection and astrobiological potential of vinyl cyanide on Titan",
+			"info": "Detección de una molécula clave en la formación de membranas celulares en la luna de Saturno, Titan.",
+			"author": "Palmer et al.",
+			"years": [2017],
+			"url": "https://advances.sciencemag.org/content/3/7/e1700022"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "The most Martian place on Earth",
+			"author": "Armando Azua-Bustos",
+			"years": [],
+			"url": "https://www.ted.com/talks/armando_azua_bustos_the_most_martian_place_on_earth"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "Let’s look for life in the outer solar system",
+			"author": "Freeman Dyson",
+			"years": [],
+			"url": "https://www.ted.com/talks/freeman_dyson_let_s_look_for_life_in_the_outer_solar_system"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "How Mars might hold the secret to the origin of life",
+			"author": "Nathalie Cabrol",
+			"years": [],
+			"url": "https://www.ted.com/talks/nathalie_cabrol_how_mars_might_hold_the_secret_to_the_origin_of_life"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "Astrobiología: Río Tinto es Marte, en la Tierra",
+			"author": "Euronews",
+			"years": [],
+			"url": "https://www.youtube.com/watch?v=yyKkLoySRPk"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "What You Need to Know About Astrobiology - The Search for Life in the Universe!",
+			"author": "NASA",
+			"years": [],
+			"url": "https://www.youtube.com/watch?v=3HN_zx4JJfM"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "Antonio Lazcano: Foro Enciende el Cosmos CajaCanarias",
+			"author": "Antonio Lazcano",
+			"years": [],
+			"url": "https://www.youtube.com/watch?v=KAxOi10kapg"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "Astrobiology in the Field, Episode 1: Iceland",
+			"author": "NASA Astrobiology",
+			"years": [],
+			"url": "https://www.youtube.com/watch?v=UIEcxS9SXXw"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "Alien Worlds",
+			"author": "Netflix",
+			"years": [],
+			"url": "https://www.netflix.com/title/80221410"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "Molecules in Space: An Introduction to Astrochemistry",
+			"author": "NRAO",
+			"years": [],
+			"url": "https://www.youtube.com/watch?v=dU11DO08H5k"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Videos / Talks",
+			"title": "La Astrobiología a través de la ilustración científica",
+			"author": "CSIC",
+			"years": [],
+			"url": "https://cab.inta-csic.es/recursos/exposicion-la-astrobiologia-a-traves-de-la-ilustracion-cientifica/"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Books",
+			"title": "¿Estamos solos?: En busca de otras vidas en el Cosmos",
+			"author": "Carlos Briones Llorente",
+			"years": [2020],
+			"url": "https://www.amazon.es/%C2%BFEstamos-solos-busca-Cosmos-Drakontos/dp/ 8491992219/ref=sr_1_1?dchild=1&amp;qid=1624284904&amp;refinements=p_27%3ACarlos+Briones+Llorente&a mp;s=books&amp;sr=1-1"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Books",
+			"title": "Exoplanetas y astrobiología: plus ultra",
+			"author": "David Barrado Navascués",
+			"years": [2021],
+			"url": "https://www.amazon.es/Exoplanetas-astrobiolog%C3%ADa-ultra-F%C3%ADsica Ciencia/dp/8413521904/ref=pd_rhf_se_s_pd_crcd_2/262-2588798-7074842?pd_rd_w=0Lsn4&amp;pf_rd_p=da6acabc-888d-4e3ea133-3cbfc0b30282&amp;pf_rd_r=D1EN3GQDHBMQPV9PB9RH&amp;pd_rd_r=8b45245 7-588e-4a1a-85aade25c4afa758&amp;pd_rd_wg=lRjbb&amp;pd_rd_i=8413521904&amp;psc=1"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Books",
+			"title": "Extremofilos y Origen de la Vida en Atacama",
+			"author": "Maria E. Frias & Manuel Contreras",
+			"years": [2018],
+			"url": "https://www.researchgate.net/publication/326813121_Extremofilos_y_Origen_de_la_Vida_en_Atacama"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Books",
+			"title": "An Introduction to Astrobiology",
+			"author": "Rothery, Gilmour, Septhton",
+			"years": [2018],
+			"url": "https://www.amazon.es/Introduction-Astrobiology-David-Rothery/dp/110843083X/ref=sr_1_12?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;dchild=1&amp;keywords=astrobiologia&amp;qid=1624292072&amp;sr=8-12"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Astronomy learning websites",
+			"title": "",
+			"author": "",
+			"years": [],
+			"url": "https://kids.alma.cl/"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Astronomy learning websites",
+			"title": "",
+			"author": "",
+			"years": [],
+			"url": "http://www.spacescoop.org/en/"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Astronomy learning websites",
+			"title": "",
+			"author": "",
+			"years": [],
+			"url": "https://spaceplace.nasa.gov/sp/"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Astronomy learning websites",
+			"title": "",
+			"author": "",
+			"years": [],
+			"url": "https://www.nasa.gov/kidsclub/index.html"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Astronomy learning websites",
+			"title": "",
+			"author": "",
+			"years": [],
+			"url": "https://www.esa.int/kids/en/home"
+		},
+		{
+			"curator": "Sergio Martín",
+			"tag": "Astronomy learning websites",
+			"title": "",
+			"author": "",
+			"years": [],
+			"url": "https://www.universe-of-learning.org/"
+		}
+	]
+}

@@ -1,0 +1,44 @@
+.channels__screen {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.channels__button-container {
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+	justify-content: center;
+}
+
+.channels__button--selected {
+	font-weight: 800;
+}
+
+.channels__button:hover, .channels__button--selected {
+	text-decoration: underline;
+}
+
+.channels__button {
+	background-color: transparent;
+	border: none;
+	font-size: 18px;
+}
+
+.channels__title {
+	font-size: 24px;
+}
+
+.channels__text {
+	padding: 30px 100px 30px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: center;
+}
+
+.channels__text--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

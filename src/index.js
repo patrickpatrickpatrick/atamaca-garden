@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom';
+import Explorer from './components/Explorer';
+import Tabs from './components/Tabs';
+import Channels from './components/Channels';
+import Info from './components/Info';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+window.renderGarden = (data) => {
+  ReactDOM.render(
+    <StrictMode>
+      <Tabs tabs={[
+        {
+          name: 'Refs'
+        },
+        {
+          name: 'Feeds'
+        },
+        {
+          name: 'About'
+        }
+      ]}>
+        <Explorer data={data} />
+        <Channels />
+        <Info curators={data.curators} />
+      </Tabs>
+    </StrictMode>,
+    document.getElementById('root')
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

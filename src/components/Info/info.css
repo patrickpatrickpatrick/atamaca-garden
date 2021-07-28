@@ -1,0 +1,84 @@
+.info-page__about-curators-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.info-page__about-curators:nth-of-type(odd) .info-page__curator-text-container {
+	padding-left: 0;
+}
+
+.info-page__about-project-title {
+	text-decoration: underline;
+}
+
+.info-page__about-curators:nth-of-type(odd) .info-page__about-curators-container {
+	flex-direction: row-reverse;
+}
+
+.info-page__curators-title {
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+
+.info-page__about-curators {
+	padding-top: 20px;
+}
+
+.info-page {
+	padding: 20px;
+}
+
+.info-page__curator-text-container {
+	padding: 0 30px;
+}
+
+.info-page__curator-img-container--desktop {
+	display: flex;
+}
+
+.info-page__curator-img-container--mobile {
+	display: none;
+}
+
+.info-page__about-curators:nth-of-type(1) {
+	padding-top: 0;
+}
+
+.info-page__curator-img-container {
+	align-items: center;
+}
+
+.info-page__curator-name {
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 800px) {
+	.info-page {
+		padding: 0;
+	}
+
+  .info-page__curator-img-container {
+    margin: auto;
+  }
+
+  .info-page__curator-name {
+  	padding-bottom: 15px;
+  }
+
+	.info-page__curator-text-container {
+		padding: 0 30px 20px 0;
+	}
+
+  .info-page__about-curators-container {
+  	flex-direction: column;
+  }
+
+	.info-page__curator-img-container--desktop {
+		display: none;
+	}
+
+	.info-page__curator-img-container--mobile {
+		display: flex;
+		justify-content: center;
+	}
+}
