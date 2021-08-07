@@ -1,5 +1,13 @@
+a:visited {
+  color: inherit;
+}
+
 .slides-title {
   text-align: center;
+}
+
+.slides-viewer {
+  overflow-y: scroll;
 }
 
 .slides-container {
@@ -7,6 +15,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.drawer__filter {
+  background-color: transparent;
+  font-family: "Simplon Norm";
+  padding: 0;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  text-decoration: underline;
 }
 
 .drawer {
@@ -69,7 +87,6 @@
   align-items: center;
 }
 
-
 .filters__row-container {
   display: flex;
 }
@@ -91,9 +108,8 @@
 .filters__button {
   background-color: transparent;
   text-decoration: underline;
-  font-size: 24px;
+  font-size: 22px;
   border: 0;
-  outline: 0;
   width: fit-content;
   white-space: nowrap;
   text-align: left;
@@ -126,27 +142,40 @@
   font-style: italic;
 }
 
-.slide-link {
+.slide-link-container:focus .slide-link {
+  filter: brightness(1.0);
+  outline: 2px solid grey;
+}
+
+
+.slide-link-container:hover .slide-link {
+  filter: brightness(1.0);
+}
+
+.slide-link-close {
   position: absolute;
-  background-image: url('https://via.placeholder.com/150');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  left: 50%;
   top: 50%;
-  transition: width 1s, height 1s;
-  transform:  translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.slide-link {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
   height: 150px;
-  width: 180px;
+  margin: 10px;
 }
 
 .slide-link-container:focus {
   outline: 0;
-}
-
-.slide-link:hover, .slide-link-container:focus .slide-link  {
-  height: 165px;
-  width: 165px;
 }
 
 .slide-link-container {
@@ -155,6 +184,9 @@
 @media only screen and (max-width: 900px) {
   .slide-link-container {
     flex-basis: 33.33%;
+  }
+  .filters__row-container {
+    height: fit-content;
   }
 }
 @media only screen and (max-width: 659px) {
@@ -180,6 +212,25 @@
 
   .drawer {
     flex-direction: column-reverse;
+  }
+}
+
+  .slide-link-container--drawer-open {
+    display: none;
+  }
+
+@media only screen and (max-width: 600px) {
+  .slide-link-container--drawer-open {
+    display: none;
+  }
+  .filters__row-name {
+    font-size: 16px;
+  }
+  .filters__button {
+    font-size: 18px;
+  }
+  .slides-viewer {
+    overflow-y: scroll;
   }
 }
 

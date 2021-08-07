@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Static from './Static';
 import Youtube from './../embeds/YoutubeEmbed';
 
@@ -9,7 +9,8 @@ const lorem = "Lorem Ipsum is simply dummy text of the printing and typesetting 
 const channelVideos = [
 	{
 		title: "Space Live Stream",
-		info: lorem,
+		param: "space",
+		info: lorem + "23",
 		embed: {
 			type: 'youtube',
 			url: 'https://www.youtube.com/watch?v=mg7FweYjasE'
@@ -17,6 +18,7 @@ const channelVideos = [
 	},
 	{
 		title: "NY Live Stream",
+		param: "nylive",
 		info: lorem,
 		embed: {
 			type: 'youtube',
@@ -25,6 +27,7 @@ const channelVideos = [
 	},
 	{
 		title: "Mdou Moctar Live",
+		param: "mdou",
 		info: lorem,
 		embed: {
 			type: 'youtube',
@@ -34,18 +37,30 @@ const channelVideos = [
 ];
 
 const Channels = () => {
-	const [ channel, setChannel ] = useState(-1);
+	const urlSearchParams = new URLSearchParams(window.location.search);
+	const params = Object.fromEntries(urlSearchParams.entries());
+	const getActiveTabOnLoad = () => channelVideos.findIndex(x => x.param === params.video);
+
+	const [ channel, setChannel ] = useState(getActiveTabOnLoad());
 	const [ hover, setHover ] = useState(-1);
 	const [ size, setSize ] = useState('large');
 
+	useEffect(() => {
+		const urlSearchParams = new URLSearchParams(window.location.search);
+		const params = Object.fromEntries(urlSearchParams.entries());
+		if ((channel > - 1) && (params.video !== channelVideos[channel].param)) {
+			window.history.replaceState({}, '', `?video=${channelVideos[channel].param}`)
+		}
+	}, [channel]);
+
 	const sizes = {
 		small: {
-			height: 175,
+			height: 250,
 			width: 300
 		},
 		medium: {
 			height: 250,
-			width: 400
+			width: 400,
 		},
 		large: {
 			height: 500,
@@ -53,7 +68,7 @@ const Channels = () => {
 		}
 	};
 
-    const resizeFunction = () => {
+   const resizeFunction = () => {
 		if (window.innerWidth < 450) {
 			if (size !== 'small') {
 				setSize('small');
@@ -67,13 +82,13 @@ const Channels = () => {
 				setSize('large');
 			}
 		}
-    };
+   };
 
 	resizeFunction();
 
-    window.addEventListener('resize', () => {
-      resizeFunction();
-    });
+  window.addEventListener('resize', () => {
+    resizeFunction();
+  });
 
 	return (
 		<div className="channels__container">
@@ -111,14 +126,7 @@ const Channels = () => {
 				<>
 					{
 						((hover > -1) || (channel > -1)) && (<>
-							{
-								((channel > -1) && (hover !== channel) && (hover > -1)) && <span className="channels__title channels__title--change">Change the channel to...</span>
-							}
-							{
-								((channel > -1) && (hover < 0)) && <span className="channels__title channels__title--change">Currently watching...</span>
-							}
-					 		<span className="channels__title">{ channelVideos[hover > -1 ? hover : channel].title }</span>
-					 		<p className="channels__info">{ channelVideos[hover > -1 ? hover : channel].info }</p>
+					 		<p className="channels__info">{ channelVideos[(hover > -1 && channel < 0) ? hover : channel].info }</p>
 						</>)
 					}
 				</>

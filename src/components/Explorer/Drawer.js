@@ -14,14 +14,16 @@ const Drawer = ({
   const drawerRef = useRef(null);
 
   useEffect(() => {
+    const rowCurrent = rowRef.current;
+
     if (rowRef.current && drawerRef.current) {
       rowRef.current.parentNode.querySelector('.slides-container-drawer--open').style.height = `${drawerRef.current.offsetHeight}px`;
     }
 
     return () => {
-      if (rowRef.current) {
+      if (rowCurrent) {
         Array.from(
-          rowRef.current.parentNode.querySelectorAll('.slides-container-drawer')).map((el) => { el.style.height = '0px';});
+          rowCurrent.parentNode.querySelectorAll('.slides-container-drawer')).forEach((el) => { el.style.height = '0px';});
       }
     };
   });
@@ -43,14 +45,14 @@ const Drawer = ({
             <h1 className="drawer__text-title">{title}</h1>
             <h2 className="drawer__text-author">{author}</h2>
             <p>{info}</p>
-            <p>Selected by <a href="#" onClick={() => addFilter('curators')(curator)} >{curator}</a></p>
-            <p>Tagged as <a href="#" onClick={() => addFilter('tags')(tag)} >{tag}</a></p>
+            <p>Selected by <button className="drawer__filter" onClick={() => addFilter('curators')(curator)} >{curator}</button></p>
+            <p>Tagged as <button className="drawer__filter" onClick={() => addFilter('tags')(tag)} >{tag}</button></p>
             <a href={url} >Visit Website</a>
           </div>
           <div
             className="drawer__image-container"
           >
-            <img className="drawer__image-img" src={`${screenshot}`}/>
+            <img alt={`screenshot of ${title}`} className="drawer__image-img" src={`${screenshot}`}/>
           </div>
         </div>,
         rowRef.current

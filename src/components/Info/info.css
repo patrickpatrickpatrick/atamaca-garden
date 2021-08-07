@@ -3,25 +3,54 @@
 	flex-direction: row;
 }
 
-.info-page__about-curators:nth-of-type(odd) .info-page__curator-text-container {
-	padding-left: 0;
+.info-page__about-orgs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.info-page__about-orgs-container {
+	flex-basis: 33.33%;
+  padding: 30px;
+	margin: auto;
+	text-align: center;
+	align-items: center;
+}
+
+.info-page__about-orgs-img {
+	width: 200px;
+}
+
+.info-page__about-orgs-img--tall {
+	width: 100px;
+}
+
+
+.info-page__curator-img {
+	width: 250px;
+	height: auto;
+}
+
+.info-page {
+	height: calc(100% - 50px);
+  overflow-y: scroll;
+}
+
+.info-page__about-project {
+	margin-bottom: 30px;
 }
 
 .info-page__about-project-title {
 	text-decoration: underline;
 }
 
-.info-page__about-curators:nth-of-type(odd) .info-page__about-curators-container {
-	flex-direction: row-reverse;
-}
-
 .info-page__curators-title {
-	margin-bottom: 0;
+	margin-bottom: 5px;
 	text-decoration: underline;
 }
 
 .info-page__about-curators {
-	padding-top: 20px;
+	padding-top: 30px;
 }
 
 .info-page {
@@ -29,7 +58,8 @@
 }
 
 .info-page__curator-text-container {
-	padding: 0 30px;
+	padding: 0 0 0 30px;
+	text-align: left;
 }
 
 .info-page__curator-img-container--desktop {
@@ -45,16 +75,18 @@
 }
 
 .info-page__curator-img-container {
-	align-items: center;
+	align-items: baseline;
 }
 
 .info-page__curator-name {
+	text-align: center;
 	font-size: 14px;
 }
 
 @media only screen and (max-width: 800px) {
 	.info-page {
 		padding: 0;
+		height: calc(100% - 10px);
 	}
 
   .info-page__curator-img-container {
@@ -66,7 +98,7 @@
   }
 
 	.info-page__curator-text-container {
-		padding: 0 30px 20px 0;
+		padding: 0 10px 0 0;
 	}
 
   .info-page__about-curators-container {
@@ -80,5 +112,15 @@
 	.info-page__curator-img-container--mobile {
 		display: flex;
 		justify-content: center;
+	}
+}
+
+h2 {
+	margin:  0;
+}
+
+@media only screen and (max-width: 900px) {
+	h2 {
+		text-align: center;
 	}
 }

@@ -1,3 +1,5 @@
+import LazyLoad from 'react-lazy-load';
+
 const Slide = ({
   slideId,
   title,
@@ -10,18 +12,23 @@ const Slide = ({
   screenshot
 }) => {
   return (
-    <div
+    <button
       tabIndex={0}
       onClick={() => setShow(!show)}
       className={`slide-link-container ${show ? 'slide-link-container--drawer-open' : ''}`}
     >
-      <div
-        className="slide-link"
-        style={{
-          backgroundImage: `url(${screenshot})`
-        }}
-      ></div>
-    </div>
+      {
+        !show ? <LazyLoad><div
+          className="slide-link"
+          style={{
+            backgroundImage: `url(${screenshot})`
+          }}
+        ></div></LazyLoad> : <div className="slide-link-close">
+          x
+        </div>
+      }
+
+    </button>
   )
 };
 

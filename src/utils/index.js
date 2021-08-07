@@ -7,12 +7,12 @@ const linksToRows = (links, slidesPerRow) => links.reduce((rows, link) => {
   return rows;
 }, [[]]);
 
-const activeFiltersSelected = (activeFilters) => ['years', 'curators', 'tags'].filter((f) => activeFilters[f].length > 0)
+const activeFiltersSelected = (activeFilters) => ['curators', 'tags'].filter((f) => activeFilters[f].length > 0)
 
 const filterReferences = (references, activeFilters) => references.filter((ref) => {
   const filters = new Set(activeFiltersSelected(activeFilters));
   const checks = [];
-  const yearsSet = new Set(ref.years);
+  // const yearsSet = new Set(ref.years);
 
   if (filters.has('curators')) {
     if (activeFilters.curators.find(x => x === ref.curator)) {
@@ -21,13 +21,13 @@ const filterReferences = (references, activeFilters) => references.filter((ref) 
       checks.push(false);
     }
   }
-  if (filters.has('years')) {
-    if (activeFilters.years.find(x => yearsSet.has(x))) {
-      checks.push(true);
-    } else {
-      checks.push(false);
-    }
-  }
+  // if (filters.has('years')) {
+  //   if (activeFilters.years.find(x => yearsSet.has(x))) {
+  //     checks.push(true);
+  //   } else {
+  //     checks.push(false);
+  //   }
+  // }
   if (filters.has('tags')) {
     if (activeFilters.tags.find(x => x === ref.tag)) {
       checks.push(true);

@@ -1,11 +1,11 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useCallback, useMemo } from 'react';
 
 const Static = ({ width, height }) => {
-  const size = { width, height };
+  const size = useMemo(() => ({ width, height}), [width, height]);
   const canvasRef = useRef(null);
   const requestIdRef = useRef(null);
 
-  const tick = () => {
+  const tick = useCallback(() => {
     requestIdRef.current = requestAnimationFrame(tick);
     if (canvasRef.current) {
       const canvasContext = canvasRef.current.getContext('2d');
@@ -15,14 +15,14 @@ const Static = ({ width, height }) => {
       }
       canvasContext.putImageData(imageData, 0, 0);
     }
-  };
+  }, [size]);
 
   useEffect(() => {
     requestIdRef.current = requestAnimationFrame(tick);
     return () => {
       cancelAnimationFrame(requestIdRef.current);
     };
-  }, []);
+  }, [tick]);
 
   return <canvas {...size} ref={canvasRef} />;
 };

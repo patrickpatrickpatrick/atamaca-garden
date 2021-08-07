@@ -1,4 +1,5 @@
 import { addFilterAction, removeFilterAction } from './../../actions';
+import { linksToRows } from './../../utils';
 
 const Filters = ({
   availableFilters,
@@ -13,7 +14,7 @@ const Filters = ({
     removeFilterAction(filterType, filter)
   );
 
-  const FiltersRow = ({ type, filters: { filters } }) => <div className="filters__row">
+  const FiltersRow = ({ type, filters: { filters } }) => <div key={type} className="filters__row">
     <span className="filters__row-name">{type}</span>
     <div className="filters__row-buttons">
       {
@@ -47,21 +48,23 @@ const Filters = ({
   </div>;
 
   return (
-    <div className="filters__row-container">
+    <>
       {
-        Object.keys(availableFilters).map((filter, index) => <>
-            {
-              (index % 2 === 0) && <div className="filters__responsive-spacer"></div>
-            }
-            <FiltersRow
-              key={filter}
-              type={filter}
-              filters={availableFilters[filter]}
-            />
-          </>
-        )
+        linksToRows(Object.keys(availableFilters), 2).map((filters, index) => <div
+          className="filters__row-container"
+          key={`filters-${index}`}>
+          {
+            filters.map((filter, index) =>
+              <FiltersRow
+                key={filter}
+                type={filter}
+                filters={availableFilters[filter]}
+              />
+            )
+          }
+        </div>)
       }
-    </div>
+    </>
   )
 }
 

@@ -12,3 +12,18 @@
   width: 100%;
   position: absolute;
 }
+
+
+@media only screen and (max-width: 900px) {
+  .video-responsive {
+    height: 300px;
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .video-responsive {
+    height: 175px;
+    width: 300px;
+  }
+}

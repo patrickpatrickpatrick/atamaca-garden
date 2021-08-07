@@ -11,13 +11,19 @@ window.renderGarden = (data) => {
     <StrictMode>
       <Tabs tabs={[
         {
-          name: 'Refs'
+          name: 'Refs',
+          url: '/',
+          scroll: true
         },
         {
-          name: 'Feeds'
+          name: 'Feeds',
+          url: '/feeds',
+          scroll: false
         },
         {
-          name: 'About'
+          name: 'About',
+          url: '/about',
+          scroll: true
         }
       ]}>
         <Explorer data={data} />

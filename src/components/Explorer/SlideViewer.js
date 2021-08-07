@@ -15,7 +15,7 @@ const SlideViewer = ({ slidesPerRow, references, show, setShow, toggleFilters })
   const isDrawerOpen = (row > -1) && (rowRefs.current[row]);
 
   return (
-    <div className="app">
+    <div className="slides-viewer">
       <>
         {
           rows.map((row, i) => (

@@ -11,6 +11,10 @@
 	justify-content: center;
 }
 
+.channels__title--change {
+	margin-bottom: 10px;
+}
+
 .channels__button--selected {
 	font-weight: 800;
 }
@@ -22,23 +26,52 @@
 .channels__button {
 	background-color: transparent;
 	border: none;
-	font-size: 18px;
+	font-size: 24px;
+	font-family: "Simplon Norm";
 }
 
-.channels__title {
-	font-size: 24px;
-}
 
 .channels__text {
-	padding: 30px 100px 30px;
+	width: 800px;
+	margin: 16px auto 0px;
 	display: flex;
 	flex-direction: column;
 	text-align: left;
 	justify-content: center;
 }
 
+.channels__container {
+	display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 .channels__text--placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .channels__button {
+  	font-size: 20px;
+  }
+
+  .channels__text {
+    width: 100%;
+    max-width: 550px;
+		margin: 16px auto 0px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+	.channels__button {
+		font-size: 15px;
+	}
+  .channels__text {
+    width: 100%;
+    max-width: 300px;
+    font-size: 20px;
+		margin: 16px auto 0px;
+  }
 }

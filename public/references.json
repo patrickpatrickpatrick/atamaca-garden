@@ -2,11 +2,15 @@
 	"curators": [
 		{
 			"name": "Diego Lara Koenig",
+			"photo": "/images/DiegoLaraKoenig.jpg",
+			"credit": "Gabriel Gúzman",
 			"invitado": "Invitado por MUSTAKIS - Leonor Merín",
 			"bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 		},
 		{
 			"name": "Sergio Martín",
+			"credit": "Sergio Martín",
+			"photo": "/images/SergioMartin.jpg",
 			"invitado": "Invitado por ALMA - Valeria Foncea",
 			"explanation": "La astrobiología es una ciencia multidisciplinaria desde su origen hace poco más de 20 años. Las referencias tratan de ser lo mas genéricas posibles dentro del contexto de la astrobiología, con un cierto sesgo hacia al estudio de la complejidad química en el universo que es el campo en el que ALMA tiene un impacto dentro de las astrobiología.",
 			"bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."

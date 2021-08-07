@@ -31,7 +31,7 @@ const Explorer = ({
     {
       curators: [],
       tags: [],
-      years: [],
+      // years: [],
     }
   );
 
@@ -42,9 +42,9 @@ const Explorer = ({
     tags: {
       filters: []
     },
-    years: {
-      filters: []
-    },
+    //years: {
+      //filters: []
+    //},
   };
 
   useEffect(() => {
@@ -85,10 +85,11 @@ const Explorer = ({
 
   const filteredReferences = filterReferences(dataWithImages, activeFilters);
 
-  availableFilters.years.filters = Array.from(new Set(filteredReferences.reduce(
-    (x, y) => { return [ ...x, ...y.years ] },[]))).sort((a, b) => b - a);
+  //availableFilters.years.filters = Array.from(new Set(filteredReferences.reduce(
+  //  (x, y) => { return [ ...x, ...y.years ] },[]))).sort((a, b) => b - a);
   availableFilters.curators.filters = Array.from(new Set(filteredReferences.map((x) => x.curator)));
   availableFilters.tags.filters = Array.from(new Set(filteredReferences.map((x) => x.tag)));
+
 
   return (
     <>
