@@ -35,10 +35,12 @@ const Info = ({ curators }) => {
 						explanation,
 						photo,
 						credit
-					}) => <div className="info-page__about-curators">
+					}) => <div key={name} className="info-page__about-curators">
 						<div className="info-page__about-curators-container">
 							<div className="info-page__curator-img-container info-page__curator-img-container--desktop">
 								<img alt={`${name}`} className="info-page__curator-img" src={photo} />
+								<br/>
+								Photograph credit: {credit}
 							</div>
 							<div className="info-page__curator-text-container">
 								<div className="info-page__curator-name">

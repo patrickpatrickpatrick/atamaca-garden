@@ -27,7 +27,7 @@ window.renderGarden = (data) => {
         }
       ]}>
         <Explorer data={data} />
-        <Channels />
+        <Channels channelVideos={data.videos} />
         <Info curators={data.curators} />
       </Tabs>
     </StrictMode>,

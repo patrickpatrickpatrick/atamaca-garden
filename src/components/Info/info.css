@@ -64,6 +64,7 @@
 
 .info-page__curator-img-container--desktop {
 	display: flex;
+	flex-direction: column;
 }
 
 .info-page__curator-img-container--mobile {

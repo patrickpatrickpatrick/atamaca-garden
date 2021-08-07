@@ -4,39 +4,7 @@ import Youtube from './../embeds/YoutubeEmbed';
 
 import './channels.css';
 
-const lorem = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.";
-
-const channelVideos = [
-	{
-		title: "Space Live Stream",
-		param: "space",
-		info: lorem + "23",
-		embed: {
-			type: 'youtube',
-			url: 'https://www.youtube.com/watch?v=mg7FweYjasE'
-		}
-	},
-	{
-		title: "NY Live Stream",
-		param: "nylive",
-		info: lorem,
-		embed: {
-			type: 'youtube',
-			url: 'https://www.youtube.com/watch?v=AdUw5RdyZxI'
-		}
-	},
-	{
-		title: "Mdou Moctar Live",
-		param: "mdou",
-		info: lorem,
-		embed: {
-			type: 'youtube',
-			url: 'https://www.youtube.com/watch?v=DFZobgLF5Vc'
-		}
-	}
-];
-
-const Channels = () => {
+const Channels = ({ channelVideos }) => {
 	const urlSearchParams = new URLSearchParams(window.location.search);
 	const params = Object.fromEntries(urlSearchParams.entries());
 	const getActiveTabOnLoad = () => channelVideos.findIndex(x => x.param === params.video);
