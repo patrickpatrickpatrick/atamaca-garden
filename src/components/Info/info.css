@@ -1,3 +1,10 @@
+.info-page__developer-credit {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .info-page__about-curators-container {
 	display: flex;
 	flex-direction: row;

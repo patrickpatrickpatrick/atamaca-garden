@@ -7,7 +7,8 @@ import './channels.css';
 const Channels = ({ channelVideos }) => {
 	const urlSearchParams = new URLSearchParams(window.location.search);
 	const params = Object.fromEntries(urlSearchParams.entries());
-	const getActiveTabOnLoad = () => channelVideos.findIndex(x => x.param === params.video);
+	// const getActiveTabOnLoad = () => channelVideos.findIndex(x => x.param === params.video);
+	const getActiveTabOnLoad = () => 0;
 
 	const [ channel, setChannel ] = useState(getActiveTabOnLoad());
 	const [ hover, setHover ] = useState(-1);
@@ -94,7 +95,10 @@ const Channels = ({ channelVideos }) => {
 				<>
 					{
 						((hover > -1) || (channel > -1)) && (<>
-					 		<p className="channels__info">{ channelVideos[(hover > -1 && channel < 0) ? hover : channel].info }</p>
+					 		{ channelVideos[(hover > -1 && channel < 0) ? hover : channel].info.map(i => <div className="channels__credit-container">
+					 				<div className="channels__credit-role">{i.role}</div>
+					 				<div className="channels__credit-name">{i.credit}</div>
+					 			</div>) }
 						</>)
 					}
 				</>

@@ -16,8 +16,8 @@ window.renderGarden = (data) => {
           scroll: true
         },
         {
-          name: 'Feeds',
-          url: '/feeds',
+          name: 'Livefeed',
+          url: '/livefeed',
           scroll: false
         },
         {

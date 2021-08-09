@@ -3,9 +3,17 @@ import './info.css';
 const Info = ({ curators }) => {
 	return (
 		<div className="info-page">
+			<div className="info-page__developer-credit">
+				Designed and Developed By Patrick Cartlidge
+			</div>
 			<div className="info-page__about-project">
-				<h2 className="info-page__about-project-title">About the project</h2>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<h2 className="info-page__about-project-title">Atacama Garden Web Portal</h2>
+				<p>
+					The concept of ‘landscape’ has been broadly treated by the arts and sciences throughout the past centuries. However, due to the emergence of the digital realm, the word has acquired a different understanding that is linked with the idea of an entangled network of elements dependent on one another and relying on the interconnections between them. This wholeness or connected network of digital data can be referred to as a ‘digital landscape’, and because of that, also serves to better understand the natural phenomena that science and technology tries to acknowledge. This is because it is now understood that natural environments work in a similar way, by communicating and exchanging information between the constituent elements, such as how the trees and plants communicate with each other. By these means, it is going to become apparent how the digital realm can be directly related to the way a networked landscape works. In that context, Fundación Mustakis / ALMA garden brings together art, science, and technology towards an educational purpose, aiming to speculate and question our understanding of nature through technology, going from the bleak landscape of Atacama Desert with the eyes towards the most distant galaxies, but focusing on bringing this ideas closer to people for them to find a meaning.
+				</p>
+				<p>
+					For this occasion under the organisation of Samuel Domínguez, Valeria Foncea (ALMA) and Leonor Merín (Mustakis) invited a scientist and an architect to curate and select references from their field of expertise that will help us open the discussion towards the concept of Atacama Garden. This will provide a broader picture of the theme and hopefully open a window for the curious users willing to deepen the subject and a starting point for them to explore the unknown.
+				</p>
 			</div>
 			<h2 className="info-page__about-project-title">Organisations</h2>
 			<div className="info-page__about-orgs">
@@ -58,7 +66,7 @@ const Info = ({ curators }) => {
 									</div>
 								}
 								<div className="info-page__curator-bio">
-									{bio}
+									{bio.map(b => <p>{b}</p>)}
 								</div>
 							</div>
 						</div>

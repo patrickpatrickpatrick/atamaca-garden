@@ -30,20 +30,35 @@
 	font-family: "Simplon Norm";
 }
 
+.channels__credit-container {
+	padding-top: 10px;
+}
+
+.channels__credit-name {
+	font-size: 20px;
+}
+
+.channels__credit-role, .channels__credit-name {
+	text-align: center;
+}
 
 .channels__text {
-	width: 800px;
 	margin: 16px auto 0px;
 	display: flex;
-	flex-direction: column;
 	text-align: left;
 	justify-content: center;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .channels__container {
 	display: flex;
   flex-direction: column;
   align-self: center;
+  width: 100%;
 }
 
 .channels__text--placeholder {
@@ -52,7 +67,15 @@
   justify-content: center;
 }
 
+.channels__credit-container {
+	width: 25%;
+}
+
 @media only screen and (max-width: 900px) {
+	.channels__credit-container {
+		width: 50%;
+	}
+
   .channels__button {
   	font-size: 20px;
   }
@@ -65,6 +88,10 @@
 }
 
 @media only screen and (max-width: 450px) {
+	.channels__credit-container {
+		width: 100%;
+	}
+
 	.channels__button {
 		font-size: 15px;
 	}
