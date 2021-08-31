@@ -3,7 +3,7 @@ import './info.css';
 const Info = ({ curators }) => {
 	return (
 		<div className="info-page">
-			<div className="info-page__developer-credit">
+			<div className="info-page__developer-credit info-page__developer-credit--desktop">
 				Designed and Developed By Patrick Cartlidge
 			</div>
 			<div className="info-page__about-project">
@@ -42,7 +42,8 @@ const Info = ({ curators }) => {
 						bio,
 						explanation,
 						photo,
-						credit
+						credit,
+						representando
 					}) => <div key={name} className="info-page__about-curators">
 						<div className="info-page__about-curators-container">
 							<div className="info-page__curator-img-container info-page__curator-img-container--desktop">
@@ -59,6 +60,7 @@ const Info = ({ curators }) => {
 								</div>
 								<div className="info-page__explanation">
 									<p>{ invitado }</p>
+									<p>{ representando }</p>
 								</div>
 								{
 									explanation && <div className="info-page__explanation">

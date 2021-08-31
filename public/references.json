@@ -23,7 +23,7 @@
 			],
 			"embed": {
 				"type": "youtube",
-				"url": "https://www.youtube.com/watch?v=mg7FweYjasE"
+				"url": "https://www.youtube.com/watch?v=fo_r3OUN3Cc"
 			}
 		}
 	],
@@ -32,7 +32,8 @@
 			"name": "Diego Andrés Lara Koenig",
 			"photo": "/images/DiegoLaraKoenig.jpg",
 			"credit": "Gabriel Gúzman",
-			"invitado": "Invitado por MUSTAKIS - Leonor Merín",
+			"invitado": "Invitado por Fundación Mustakis",
+			"representando": "Representando a Fundación Mustakis, Leonor Merín - Directora de Innovación y Contenido",
 			"explanation": "Maderuelo describe el paisaje como un compendio de percepciones y aprendizajes de los diferentes elementos visuales en un entorno físico o natural que son interpretadas por quienes lo observan. A raíz de esto, la muestra de referencias seleccionada recopila distintos tipos de representación o interpretación de los elementos que conforman el paisaje; enfatizando en la visión latinoamericana, tanto en su entorno natural como en el urbano, a la vez que interpreta la historia de su territorio. Además de, cómo estos pueden modificar el entorno para resignificarlo según la visión de cada uno de los artistas.",
 			"bio": [
 				"Architect - Master’s Degree in Landscape Architecture, Diego Portales University (2020)",
@@ -44,7 +45,8 @@
 			"name": "Sergio Martín",
 			"credit": "Sergio Martín",
 			"photo": "/images/SergioMartin.jpg",
-			"invitado": "Invitado por ALMA - Valeria Foncea",
+			"invitado": "Invitado por ALMA Observatory",
+			"representando": "Representando a ALMA Observatory, Valeria Foncea - Education and Public Outreach Manager",
 			"explanation": "La astrobiología es una ciencia multidisciplinaria desde su origen hace poco más de 20 años. Las referencias tratan de ser lo mas genéricas posibles dentro del contexto de la astrobiología, con un cierto sesgo hacia al estudio de la complejidad química en el universo que es el campo en el que ALMA tiene un impacto dentro de las astrobiología.",
 			"bio": [
 				"PhD in Astronomy in 2006 by the Universidad Complutense de Madrid based on work carried out at the Instituto de Radioastronomía milimétrica in Spain.",
