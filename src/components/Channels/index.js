@@ -5,9 +5,6 @@ import Youtube from './../embeds/YoutubeEmbed';
 import './channels.css';
 
 const Channels = ({ channelVideos }) => {
-	const urlSearchParams = new URLSearchParams(window.location.search);
-	const params = Object.fromEntries(urlSearchParams.entries());
-	// const getActiveTabOnLoad = () => channelVideos.findIndex(x => x.param === params.video);
 	const getActiveTabOnLoad = () => 0;
 
 	const [ channel, setChannel ] = useState(getActiveTabOnLoad());
@@ -20,7 +17,7 @@ const Channels = ({ channelVideos }) => {
 		if ((channel > - 1) && (params.video !== channelVideos[channel].param)) {
 			window.history.replaceState({}, '', `?video=${channelVideos[channel].param}`)
 		}
-	}, [channel]);
+	}, [channel, channelVideos]);
 
 	const sizes = {
 		small: {

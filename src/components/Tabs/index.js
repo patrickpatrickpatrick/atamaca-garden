@@ -39,7 +39,7 @@ const Tabs = ({ children, tabs }) => {
 			</div>
 			<div className="tabs__content-container">
 				<div className="tabs__tab">
-					<div className={`tabs__tab-content ${!tabs[tabActive].scroll ? 'tabs__tab-content--scroll' : ''}`}>
+					<div className={`tabs__tab-content ${tabs[tabActive].name === 'About' ? 'tabs__tab-content--about' : ''} ${!tabs[tabActive].scroll ? 'tabs__tab-content--scroll' : ''}`}>
 						{
 							React.Children.toArray(children)[tabActive]
 						}
